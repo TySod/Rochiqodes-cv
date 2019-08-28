@@ -1,0 +1,111 @@
+/* ----head----- */
+.head {
+  height: 10%;
+  background-color: aliceblue;
+  text-align: center;
+  padding: 1px;
+  float: left;
+  clear: right;
+  width: 34%;
+  margin-bottom: 5px;
+  border-right: solid 4px #aaa;
+}
+
+.head img {
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin-top: 10px;
+  padding: 0px;
+}
+.head h1 {
+  font-size: 3em;
+  padding: 0px;
+  margin: 0px;
+}
+.head p {
+  margin: 4px;
+  padding: 4px;
+  font-style: italic;
+  font: 300;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.head p:nth-of-type(1) {
+  font: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.address {
+  background-color: aliceblue;
+  height: 10%;
+  width: 64%;
+  padding: 1px;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  float: left;
+  clear: right;
+  vertical-align: center;
+  margin: auto;
+}
+.address p {
+  padding-left: 15px;
+}
+
+.address a {
+  text-decoration: none;
+  font-style: oblique;
+  border-right: 2px solid black;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2px 15px;
+}
+.address a:nth-of-type(2),
+.address a:nth-of-type(4) {
+  border: none;
+}
+
+/* ----------------body---------- */
+.body {
+  margin-top: 10px;
+  background-color: #eeeeee;
+  padding: 5px;
+  width: 98vw;
+}
+
+.topic {
+  width: 20%;
+  justify-content: right;
+  float: left;
+  clear: both;
+}
+.topic h2 {
+  font-size: 2em;
+  /* margin-block: 10px; */
+  text-align: right;
+  /* display: inline-block; */
+  font-variant: small-caps;
+  padding-right: 15px;
+  vertical-align: top;
+}
+
+.content {
+  justify-content: left;
+  border-left: solid 4px #aaa;
+  width: 73%;
+  float: left;
+  clear: right;
+  padding-left: 15px;
+  border-bottom: solid 4px #aaa;
+}
+em {
+  color: #333;
+  font-weight: 400;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 0.5em;
+}
+
+.content spam {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 1.1em;
+}
