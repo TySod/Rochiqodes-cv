@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="mycontact">
+      <h1>Fill the form below to send me a Message</h1>
+      <form method="post" id="myForm">
+          <fieldset>
+            <legend>Do you have questions for me?</legend>
+            <div class="row">
+              <label for="user" >Name:</label>
+              <input id= "user" name ="name"  type = "text" required pattern="[a-zA-Z ]{3,}" placeholder = "Your name goes here" /> <br> <br></div>
+              <div class="row">
+            <label for="mail" >Email:</label>
+            <input name ="e-mail" id="mail"  type = "text" required placeholder = "email@example.com" /><br> <br>
+            <label for="title" >Title:</label>
+            <input name ="title" id="title"  type = "text" required placeholder = "Your message title goes here" /><br><br>
+          </div>
+          <div class="row">
+            <label for="message">Message:</label>
+            <input style="height:20px" id="message" name ="comment" required placeholder="Type your message here" pattern="[a-zA-Z ]{20,}"> <br> <br>
+          </div>
+        <button id="submit"> <a href="mailto:oyeniyi4real@gmail.com">SEND</a></button><br> <br>
+        </fieldset>
+        </form>
+  </div>  
+</body>
+</html>
+
+

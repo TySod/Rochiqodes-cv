@@ -51,7 +51,8 @@
   padding-left: 15px;
 }
 
-.address a {
+.address a,
+button a {
   text-decoration: none;
   font-style: oblique;
   border-right: 2px solid black;
@@ -59,9 +60,19 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 2px 15px;
 }
-.address a:nth-of-type(2),
-.address a:nth-of-type(4) {
+.address a:nth-of-type(4), button a:nth-of-type(1) {
   border: none;
+}
+
+button {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  padding: 5px;
+  margin: 5px;
 }
 
 /* ----------------body---------- */
@@ -108,4 +119,22 @@ em {
   font-weight: 800;
   font-style: italic;
   font-size: 1.1em;
+}
+
+/*-------------- contact page -------*/
+.mycontact {
+  background-color: aliceblue;
+  vertical-align: middle;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px 5px #888;
+  width: 45%;
+  height: 45%;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  /* top: 70%; */
+  /* -webkit-transform: translateY(20%); */
+  /* -ms-transform: translateY(20%); */
+  transform: translateY(60%);
+  transform: translateX(60%);
 }
