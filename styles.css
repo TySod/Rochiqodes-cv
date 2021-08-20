@@ -1,15 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 header {
-  background: #eee;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 50px;
 }
 
 header img {
@@ -17,6 +18,10 @@ header img {
   height: 150px;
   border-radius: 50%;
   object-position: center;
+}
+
+main {
+  padding-left: 300px;
 }
 
 h1 {
@@ -29,37 +34,42 @@ h2 {
   padding-bottom: 15px;
 }
 
+p {
+  line-height: 1.7;
+}
+
 .head {
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  background: rgb(24, 129, 167);
+  color: #fff;
+  padding: 40px;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
 }
 
-.stack {
-  padding-left: 20px;
+.social a {
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 10px;
+  color: #fff;
+}
+
+#objective {
+  text-align: center;
+  padding: 20px 50px 0 300px;
 }
 
 #skills ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   list-style: none;
   gap: 20px;
-}
-@media (max-width: 900px) {
-  #skills ul {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 560px) {
-  #skills ul {
-    grid-template-columns: 1fr;
-  }
-
-  header {
-    padding: 0 10px;
-  }
 }
 
 #skills li {
@@ -73,33 +83,25 @@ h2 {
 #experience,
 #education,
 #skills {
-  /* background: rgba(29, 83, 119, 0.878); */
   padding: 70px 20px;
 }
 
 #experience {
-  background: #333;
+  background: url(./img/services-bg.jpg) no-repeat;
+  background-size: cover;
   color: white;
 }
 
-#education,
-header {
+#education {
   background: rgb(13, 8, 58);
   color: white;
 }
 
 #experience ul {
   display: grid;
-  /* grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); */
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   list-style: none;
-}
-
-@media (max-width: 900px) {
-  #experience ul {
-    grid-template-columns: 1fr;
-  }
 }
 
 #experience h3,
@@ -123,10 +125,52 @@ header {
   font-size: 1.3rem;
 }
 
+#education {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url(./img/edu.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .edu-content {
   padding-left: 50px;
 }
 
 .associate {
   text-align: center;
+}
+
+@media (max-width: 980px) {
+  #experience ul {
+    grid-template-columns: 1fr;
+  }
+
+  #skills ul {
+    grid-template-columns: 1fr;
+  }
+
+  #education li {
+    flex-direction: column;
+  }
+
+  .edu-content {
+    padding: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  main,
+  #objective {
+    padding: 20px;
+  }
+
+  .head {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  header {
+    display: block;
+  }
 }
